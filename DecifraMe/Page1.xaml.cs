@@ -16,5 +16,18 @@ namespace DecifraMe
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            String texto = enResposta.Text;
+            if(texto.ToUpper() == "silencio")
+            {
+                Navigation.PushAsync(new Page2());
+            }
+            else
+            {
+
+            }
+        }
     }
 }
