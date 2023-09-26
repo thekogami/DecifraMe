@@ -26,7 +26,7 @@ namespace DecifraMe
             }
             else
             {
-
+                DisplayAlert("A esfinge fala:", "seus miolos são apetitosos. Vou devora-los", "OK");
             }
         }
     }
