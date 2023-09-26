@@ -20,7 +20,12 @@ namespace DecifraMe
         private void Button_Clicked(object sender, EventArgs e)
         {
             String texto = enResposta.Text;
-            if(texto.ToUpper() == "SILENCIO")
+            if (string.IsNullOrEmpty(texto))
+            {
+                return; // Não faz nada se o texto estiver vazio ou null
+            }
+
+            if (texto.ToUpper() == "SILENCIO")
             {
                 Navigation.PushAsync(new Page2());
             }

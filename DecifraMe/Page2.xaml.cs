@@ -20,6 +20,11 @@ namespace DecifraMe
         private void Button_Clicked(object sender, EventArgs e)
         {
             String texto = enResposta.Text;
+            if (string.IsNullOrEmpty(texto))
+            {
+                return; // Não faz nada se o texto estiver vazio ou null
+            }
+
             if (texto.ToUpper() == "PIANO")
             {
                 Navigation.PushAsync(new Page3());
