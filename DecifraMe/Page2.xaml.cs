@@ -16,5 +16,23 @@ namespace DecifraMe
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            String texto = enResposta.Text;
+            if (texto.ToUpper() == "PIANO")
+            {
+                Navigation.PushAsync(new Page3());
+            }
+            else
+            {
+                DisplayAlert("A Esfinge fala:", "Seus miolos são apetitosos. Vou devora-los", "OK");
+            }
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PopToRootAsync();
+        }
     }
 }

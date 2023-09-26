@@ -20,14 +20,19 @@ namespace DecifraMe
         private void Button_Clicked(object sender, EventArgs e)
         {
             String texto = enResposta.Text;
-            if(texto.ToUpper() == "silencio")
+            if(texto.ToUpper() == "SILENCIO")
             {
                 Navigation.PushAsync(new Page2());
             }
             else
             {
-                DisplayAlert("A esfinge fala:", "seus miolos são apetitosos. Vou devora-los", "OK");
+                DisplayAlert("A Esfinge fala:", "seus miolos são apetitosos. Vou devora-los", "OK");
             }
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
         }
     }
 }
