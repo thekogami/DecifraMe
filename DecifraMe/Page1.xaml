@@ -8,7 +8,8 @@
         <StackLayout>
             <Label Text="O que é tão frágil que dizer o nome dele o quebra?"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" 
+                   FontSize="Large"/>
             <Entry HorizontalOptions="FillAndExpand" x:Name="enResposta" />
             <Button Text="Responder" Clicked="Button_Clicked"/>
         </StackLayout>
